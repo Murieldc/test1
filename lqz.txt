@@ -1,0 +1,42 @@
+git config --global user.name "name"
+git config --global user.emall "email"
+
+mkdir name
+cd name
+pwd //显示目录
+
+git init //管理
+cat name
+
+git add name
+git commit -m "new"
+git status
+git diff //查看修改 // + HEAD -- name
+git log // + --graph
+git reset --hard HEAD^  //^^…… //~100 //name
+git reset --hard xxxxxx
+git reflog
+git checkout --name   //撤销
+git rm name
+
+ssh-keygen -t rsa -C "email"
+git remote add origin git@github.com:name/name
+git push -u origin master
+git push origin master
+
+git clone git@github.com:name/name
+cd gitskills
+ls
+
+git branch //+ name 创建 // + -d（D）  name删除 //++ --set-upstream name origion/name
+git checkout name //切换 // + -b name 创建切换 //++ origin/name 远
+git merge name //合并
+git merge --no-ff -m "new" name
+
+git stash //保存//+ list查看 //+ pop恢复
+
+git remote // -v
+git pull
+
+git tag name 
+git show name
